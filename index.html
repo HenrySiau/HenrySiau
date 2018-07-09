@@ -1,15 +1,198 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://henrysiau.github.io/ZhihengXiao/css/index.css">
+    <!-- <link rel="stylesheet" href="https://henrysiau.github.io/ZhihengXiao/css/index.css"> -->
     <title>Get to know more about Zhiheng Xiao</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            /* background-color: rgb(217, 242, 247); */
+        }
+
+        .root {
+            display: flex;
+            flex-direction: column;
+
+            width: 850;
+            margin: 10 0 0 0;
+        }
+
+        .title {
+            margin: 5;
+        }
+
+        .subtitle {
+            margin: 5;
+        }
+
+        .navBar {
+            list-style-type: none;
+            margin: 5 5 5 25;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .navItem {
+            text-decoration: none;
+            margin: 0 5 0 5;
+        }
+
+        .subtitleAndNavbar {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        #whyILoveProgramming {
+            display: flex;
+            flex-direction: row;
+            margin: 20 5 10 5;
+            /* justify-content: center; */
+        }
+
+        #profileImg {
+            width: 300;
+            height: 300;
+            border-radius: 100%;
+            margin: 10;
+        }
+
+        #articleWhyILoveProgramming {
+            margin: 10;
+            width: 450;
+        }
+
+        #articleWhyILoveProgramming .title {
+            color: blue;
+        }
+
+        #articleWhyILoveProgramming .subtitle {
+            color: blue;
+        }
+
+        #articleWhyILoveProgramming .article {
+            color: blue;
+        }
+
+        #whatIHaveDoneSoFar {
+            display: flex;
+
+        }
+
+        #whatIHaveDoneSoFar .title {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #thingsILike {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+
+        #thingsILike .title {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #thingsILike .title #title {
+            margin: 0;
+        }
+
+        #thingsILike .subtitle {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 5;
+        }
+
+        #thingsILike .subtitle #subtitle {
+            margin: 0;
+        }
+
+        footer {
+            display: flex;
+            margin-top: 5;
+            background-color: rgba(240, 248, 255, 0.89);
+            justify-content: center;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello</h1>
-    <p><a href="https://henrysiau.github.io/ZhihengXiao/doc/resume.pdf">Resume</a></p>
-    <img src="https://henrysiau.github.io/ZhihengXiao/img/me.jpeg" alt="" height="50" width="50">
+    <div class="root">
+        <header>
+            <div>
+                <h1 class="title">Zhiheng Xiao</h1>
+            </div>
+            <div class="subtitleAndNavbar">
+                <h3 class="subtitle">Full Stack Developer</h3>
+                <ul class="navBar">
+                    <li>
+                        <a href="" class="navItem">RESUME</a>
+                    </li>
+                    <li>
+                        <a href="" class="navItem">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="" class="navItem">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section id="whyILoveProgramming">
+            <img src="https://henrysiau.github.io/ZhihengXiao/img/me.jpeg" alt="" height="50" width="50" id="profileImg">
+            <div id="articleWhyILoveProgramming">
+                <h1 class="title">
+                    Hello,
+                </h1>
+                <h3 class="subtitle">
+                    why I love programming?
+                </h3>
+                <p class="article">
+                    because ....
+                </p>
+            </div>
+        </section>
+        <section id="whatIHaveDoneSoFar">
+            <div class="title">
+                <h1>
+                    -- What I've Done So Far --
+                </h1>
+            </div>
+            <div>
+                <img src="" alt="">
+                <p>description...</p>
+            </div>
+        </section>
+        <section id="thingsILike">
+            <div class="title">
+                <h1 id="title">
+                    -- What I Like--
+                </h1>
+
+            </div>
+            <div class="subtitle">
+                <h3 id="subtitle">Hiking</h3>
+            </div>
+            <div>
+                <p>images here</p>
+            </div>
+
+        </section>
+        <footer>
+            2018 by Zhiheng Xiao
+        </footer>
+    </div>
 </body>
 
 </html>
