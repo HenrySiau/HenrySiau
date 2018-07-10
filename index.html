@@ -10,7 +10,7 @@
         body {
             display: flex;
             justify-content: center;
-            /* background-color: rgb(217, 242, 247); */
+            background-color: rgb(250, 250, 250);
         }
 
         .root {
@@ -21,12 +21,16 @@
             margin: 10 0 0 0;
         }
 
-        .title {
+        #mainTitle {
             margin: 5;
+            font-family: Palatino;
+            color: rgb(94, 94, 94);
         }
 
-        .subtitle {
+        #mainSubtitle {
             margin: 5;
+            font-family: Palatino;
+            color: rgb(94, 94, 94);
         }
 
         .navBar {
@@ -40,6 +44,8 @@
         .navItem {
             text-decoration: none;
             margin: 0 5 0 5;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(105, 105, 105);
         }
 
         .subtitleAndNavbar {
@@ -52,7 +58,6 @@
             display: flex;
             flex-direction: row;
             margin: 20 5 10 5;
-            /* justify-content: center; */
         }
 
         #profileImg {
@@ -68,26 +73,50 @@
         }
 
         #articleWhyILoveProgramming .title {
-            color: blue;
+            color: rgb(94, 94, 94);
+            font-family: 'Comic Sans MS';
+            font-size: 4em;
+            margin: 0;
         }
 
         #articleWhyILoveProgramming .subtitle {
-            color: blue;
+            color: rgb(94, 94, 94);
+            font-family: 'Comic Sans MS';
+            font-size: 2em;
+            margin: 0;
+            font-weight: lighter;
         }
 
         #articleWhyILoveProgramming .article {
-            color: blue;
+            color: rgb(94, 94, 94);
         }
 
         #whatIHaveDoneSoFar {
             display: flex;
+            flex-flow: column;
+        }
 
+        #whatIHaveDoneSoFar .projects {
+            display: flex;
+            flex-flow: column;
+        }
+
+        #whatIHaveDoneSoFar .projects .project {
+            display: flex;
+            flex-flow: row;
+            margin: 5 0 5 0;
+        }
+
+        #whatIHaveDoneSoFar .projects .project p {
+            margin-left: 10;
         }
 
         #whatIHaveDoneSoFar .title {
             width: 100%;
             display: flex;
             justify-content: center;
+            color: rgb(94, 94, 94);
+            font-family: 'Comic Sans MS';
         }
 
         #thingsILike {
@@ -96,16 +125,21 @@
             flex-direction: column;
             justify-content: center;
             align-content: center;
+            margin: 30 0 20 0;
         }
 
         #thingsILike .title {
             width: 100%;
             display: flex;
             justify-content: center;
+            color: rgb(94, 94, 94);
+            font-family: 'Comic Sans MS';
         }
 
         #thingsILike .title #title {
+            font-family: 'Comic Sans MS';
             margin: 0;
+            color: rgb(94, 94, 94);
         }
 
         #thingsILike .subtitle {
@@ -113,16 +147,19 @@
             display: flex;
             justify-content: center;
             margin: 5;
+            font-weight: lighter;
         }
 
         #thingsILike .subtitle #subtitle {
             margin: 0;
+            color: rgb(94, 94, 94);
+            font-family: 'Comic Sans MS';
         }
 
         footer {
             display: flex;
-            margin-top: 5;
-            background-color: rgba(240, 248, 255, 0.89);
+            margin: 5 0 5 0;
+            color: rgb(94, 94, 94);
             justify-content: center;
         }
     </style>
@@ -132,34 +169,34 @@
     <div class="root">
         <header>
             <div>
-                <h1 class="title">Zhiheng Xiao</h1>
+                <h1 id="mainTitle">Zhiheng Xiao</h1>
             </div>
             <div class="subtitleAndNavbar">
-                <h3 class="subtitle">Full Stack Developer</h3>
+                <h3 id="mainSubtitle">Full Stack Developer</h3>
                 <ul class="navBar">
                     <li>
-                        <a href="" class="navItem">RESUME</a>
+                        <a href="https://henrysiau.github.io/ZhihengXiao/doc/resume.pdf" class="navItem">RESUME</a>
                     </li>
                     <li>
-                        <a href="" class="navItem">PROJECTS</a>
+                        <a href="https://github.com/HenrySiau/gtplanner-frontend" class="navItem">PROJECTS</a>
                     </li>
                     <li>
-                        <a href="" class="navItem">CONTACT</a>
+                        <a href="mailto:siauhenry@gmail.com" class="navItem">CONTACT</a>
                     </li>
                 </ul>
             </div>
         </header>
         <section id="whyILoveProgramming">
-            <img src="https://henrysiau.github.io/ZhihengXiao/img/me.jpeg" alt="" height="50" width="50" id="profileImg">
+            <img src="https://henrysiau.github.io/ZhihengXiao/img/me.jpg" alt="" height="50" width="50" id="profileImg">
             <div id="articleWhyILoveProgramming">
                 <h1 class="title">
                     Hello,
                 </h1>
                 <h3 class="subtitle">
-                    why I love programming?
+                    a bit about me:
                 </h3>
                 <p class="article">
-                    because ....
+                    I'm always interested in technology and used it at work...
                 </p>
             </div>
         </section>
@@ -169,28 +206,44 @@
                     -- What I've Done So Far --
                 </h1>
             </div>
-            <div>
-                <img src="" alt="">
-                <p>description...</p>
+            <div class="projects">
+                <div class="project">
+                    <img src="https://henrysiau.github.io/ZhihengXiao/img/1.jpg" alt="" height="160" width="240">
+                    <p>description...</p>
+                </div>
+                <div class="project">
+                    <img src="https://henrysiau.github.io/ZhihengXiao/img/1.jpg" alt="" height="160" width="240">
+                    <p>description...</p>
+                </div>
+                <div class="project">
+                    <img src="https://henrysiau.github.io/ZhihengXiao/img/1.jpg" alt="" height="160" width="240">
+                    <p>description...</p>
+                </div>
             </div>
         </section>
         <section id="thingsILike">
             <div class="title">
                 <h1 id="title">
-                    -- What I Like--
+                    -- Tings I Like--
                 </h1>
-
             </div>
             <div class="subtitle">
-                <h3 id="subtitle">Hiking</h3>
+                <h3 id="subtitle">Hiking, bicycling, Photography...</h3>
             </div>
             <div>
-                <p>images here</p>
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/1.jpg" alt="" height="160" width="240">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/2.jpg" alt="" height="160" width="240">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/3.jpg" alt="" height="160" width="240">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/4.jpg" alt="" height="160" width="240">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/5.jpg" alt="" height="160" width="240">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/6.jpg" alt="" height="160" width="240">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/7.jpg" alt="" height="160" width="240">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/8.jpeg" alt="" height="160" width="240">
             </div>
 
         </section>
         <footer>
-            2018 by Zhiheng Xiao
+            © 2018 by Zhiheng Xiao
         </footer>
     </div>
 </body>
