@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="stylesheet" href="https://henrysiau.github.io/ZhihengXiao/css/index.css"> -->
-    <title>Get to know more about Zhiheng Xiao</title>
+    <title>Zhiheng Xiao - Full Stack Developer</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             background-color: rgb(250, 250, 250);
+            width: 100%;
         }
 
         .root {
             display: flex;
             flex-direction: column;
 
-            width: 850;
-            margin: 10 0 0 0;
+            /* max-width: 850; */
+            width: 100%;
+            margin: 10;
         }
 
         #mainTitle {
@@ -48,7 +50,7 @@
             color: rgb(105, 105, 105);
         }
 
-        .subtitleAndNavbar {
+        #subtitleAndNavbar {
             display: flex;
             flex-direction: row;
             align-items: flex-end;
@@ -57,19 +59,30 @@
         #whyILoveProgramming {
             display: flex;
             flex-direction: row;
-            margin: 20 5 10 5;
+            margin: 60 5 10 5;
         }
 
         #profileImg {
-            width: 300;
-            height: 300;
+            width: 100%;
+            height: auto;
             border-radius: 100%;
             margin: 10;
+            align-self: center;
+        }
+
+        #profileImgContainer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex: 1;
         }
 
         #articleWhyILoveProgramming {
-            margin: 10;
+            display: flex;
+            margin: 10 0 0 30;
             width: 450;
+            flex: 2;
+            flex-direction: column;
         }
 
         #articleWhyILoveProgramming .title {
@@ -88,6 +101,8 @@
         }
 
         #articleWhyILoveProgramming .article {
+            display: flex;
+            margin: 15 5 0 0;
             color: rgb(94, 94, 94);
         }
 
@@ -104,11 +119,20 @@
         #whatIHaveDoneSoFar .projects .project {
             display: flex;
             flex-flow: row;
-            margin: 5 0 5 0;
+            margin: 10 0 10 0;
+            /* border: 1px solid rgb(94, 94, 94); */
         }
 
         #whatIHaveDoneSoFar .projects .project p {
-            margin-left: 10;
+            margin-left: 30;
+            color: rgb(94, 94, 94);
+            width: calc(100% - 190px)
+        }
+
+        #whatIHaveDoneSoFar .projects .project img {
+            border: 1px solid rgb(94, 94, 94);
+            width: 160;
+            height: 160;
         }
 
         #whatIHaveDoneSoFar .title {
@@ -116,7 +140,7 @@
             display: flex;
             justify-content: center;
             color: rgb(94, 94, 94);
-            font-family: 'Comic Sans MS';
+            font-family: courier;
         }
 
         #thingsILike {
@@ -125,19 +149,17 @@
             flex-direction: column;
             justify-content: center;
             align-content: center;
-            margin: 30 0 20 0;
+            margin: 60 0 20 0;
         }
 
         #thingsILike .title {
             width: 100%;
             display: flex;
             justify-content: center;
-            color: rgb(94, 94, 94);
-            font-family: 'Comic Sans MS';
         }
 
         #thingsILike .title #title {
-            font-family: 'Comic Sans MS';
+            font-family: courier;
             margin: 0;
             color: rgb(94, 94, 94);
         }
@@ -146,14 +168,14 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            margin: 5;
+            margin: 5 0 20 0;
             font-weight: lighter;
         }
 
         #thingsILike .subtitle #subtitle {
             margin: 0;
             color: rgb(94, 94, 94);
-            font-family: 'Comic Sans MS';
+            font-family: courier;
         }
 
         footer {
@@ -161,6 +183,88 @@
             margin: 5 0 5 0;
             color: rgb(94, 94, 94);
             justify-content: center;
+        }
+
+        #photos {
+            height: 335;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            overflow: scroll;
+            justify-content: center;
+        }
+
+        #photos img {
+            margin: 3;
+            width: calc((100% - 18px) / 3);
+            height: auto;
+            align-self: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            #subtitleAndNavbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navBar {
+                margin: 5 5 5 0;
+            }
+            #whyILoveProgramming {
+                flex-direction: column;
+                margin: 20 5 10 5;
+                height: 550px;
+            }
+
+            #profileImgContainer {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex: 1;
+                order: 3;
+            }
+
+            #profileImg {
+                width: 50%;
+                height: auto;
+                border-radius: 100%;
+                margin: 10;
+                align-self: center;
+            }
+            #articleWhyILoveProgramming {
+                display: flex;
+                margin: 10 0 0 30;
+                flex: 1;
+                flex-direction: column;
+                width: 90%;
+            }
+
+            #whatIHaveDoneSoFar .projects .project img {
+                width: 30%;
+                height: auto;
+                align-self: center;
+            }
+
+            #photos {
+                height: 310;
+            }
+
+            #photos img {
+                margin: 2;
+                width: calc((100% - 8px) / 2);
+            }
+        }
+
+        @media screen and (min-width: 960px) {
+            .root {
+                width: 80%;
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            .root {
+                width: 850px;
+            }
         }
     </style>
 </head>
@@ -171,7 +275,7 @@
             <div>
                 <h1 id="mainTitle">Zhiheng Xiao</h1>
             </div>
-            <div class="subtitleAndNavbar">
+            <div id="subtitleAndNavbar">
                 <h3 id="mainSubtitle">Full Stack Developer</h3>
                 <ul class="navBar">
                     <li>
@@ -181,13 +285,18 @@
                         <a href="https://github.com/HenrySiau/gtplanner-frontend" class="navItem">PROJECTS</a>
                     </li>
                     <li>
-                        <a href="mailto:siauhenry@gmail.com" class="navItem">CONTACT</a>
+                        <a href="mailto:siauhenry@gmail.com" class="navItem">EMAIL</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/zhiheng-xiao/" class="navItem">LINKEDIN</a>
                     </li>
                 </ul>
             </div>
         </header>
         <section id="whyILoveProgramming">
-            <img src="https://henrysiau.github.io/ZhihengXiao/img/me.jpg" alt="" height="50" width="50" id="profileImg">
+            <div id="profileImgContainer">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/me.jpg" alt="" id="profileImg">
+            </div>
             <div id="articleWhyILoveProgramming">
                 <h1 class="title">
                     Hello,
@@ -196,7 +305,9 @@
                     a bit about me:
                 </h3>
                 <p class="article">
-                    I'm always interested in technology and used it at work...
+                    I'm a Full Stack Developer with a bachelor's degree in E-commerce. My passion is leveraging technology to solve real world
+                    problems. As a previous top sales in b2b and b2c, I have strong communication skills and works well under
+                    pressure. I love crafting fast, stable and intuitive apps.
                 </p>
             </div>
         </section>
@@ -208,37 +319,69 @@
             </div>
             <div class="projects">
                 <div class="project">
-                    <img src="https://henrysiau.github.io/ZhihengXiao/img/1.jpg" alt="" height="160" width="240">
-                    <p>description...</p>
+                    <img src="https://henrysiau.github.io/ZhihengXiao/img/gtp.png" alt="">
+                    <p>
+                        Group Travel Planner &nbsp&nbsp&nbsp
+                        <a href="https://gtplanner.com">https://gtplanner.com</a>
+                        <br>
+                        <br> A single page web app for sharing travel ideas and managing itinerary. Build all by myself with
+                        React, Redux, Express, PostgreSQL and Socket.IO, hosted at AWS.
+                        <br> The users can create trips, invite friends to join vai email or invitation link, login with facebook
+                        account, chat with group members online.
+                        <br>
+                        <br>
+                        <a href="https://github.com/HenrySiau/gtplanner-frontend">view the source code</a>
+                    </p>
                 </div>
                 <div class="project">
-                    <img src="https://henrysiau.github.io/ZhihengXiao/img/1.jpg" alt="" height="160" width="240">
-                    <p>description...</p>
+                    <img src="https://henrysiau.github.io/ZhihengXiao/img/udacity.png" alt="">
+                    <p>Full Stack Web Developer Nanodegree
+                        <br>
+                        <br> Core curriculum:
+                        <br> Python, HTML, CSS, SQL, JavaScript, Flask, sqlAlchemy, Postgresql, JQuery, KnockoutJS, AJAX, Git,
+                        Linux, Vagrant, Apache2, deploy to AWS
+                    </p>
                 </div>
                 <div class="project">
-                    <img src="https://henrysiau.github.io/ZhihengXiao/img/1.jpg" alt="" height="160" width="240">
-                    <p>description...</p>
+                    <img src="https://henrysiau.github.io/ZhihengXiao/img/sgs.jpg" alt="">
+                    <p> Sales Representative
+                        <br>
+                        <br> • Won Sales Elite award, Top 1 out of 10.
+                        <br> • built a database app with Microsoft Access.
+                        <br> • promoted my app to the sales team.
+                    </p>
+                </div>
+                <div class="project">
+                    <img src="https://henrysiau.github.io/ZhihengXiao/img/gpnu.jpg" alt="">
+                    <p> Bachelor's degree in E-commerce
+                        <br>
+                        <br> Core curriculum:
+                        <br> Computer Science Fundamental, Programming in C, Data Structure and Algorithm in Java, Relational
+                        Data Base, Computer Network, OOP, Software Design Pattern, E-commerce Marketing, E-commerce Security,
+                        Supply Chain and Logistics, ERP.
+                    </p>
                 </div>
             </div>
         </section>
         <section id="thingsILike">
             <div class="title">
                 <h1 id="title">
-                    -- Tings I Like--
+                    -- Things I Like --
                 </h1>
             </div>
             <div class="subtitle">
                 <h3 id="subtitle">Hiking, bicycling, Photography...</h3>
             </div>
-            <div>
-                <img src="https://henrysiau.github.io/ZhihengXiao/img/1.jpg" alt="" height="160" width="240">
-                <img src="https://henrysiau.github.io/ZhihengXiao/img/2.jpg" alt="" height="160" width="240">
-                <img src="https://henrysiau.github.io/ZhihengXiao/img/3.jpg" alt="" height="160" width="240">
-                <img src="https://henrysiau.github.io/ZhihengXiao/img/4.jpg" alt="" height="160" width="240">
-                <img src="https://henrysiau.github.io/ZhihengXiao/img/5.jpg" alt="" height="160" width="240">
-                <img src="https://henrysiau.github.io/ZhihengXiao/img/6.jpg" alt="" height="160" width="240">
-                <img src="https://henrysiau.github.io/ZhihengXiao/img/7.jpg" alt="" height="160" width="240">
-                <img src="https://henrysiau.github.io/ZhihengXiao/img/8.jpeg" alt="" height="160" width="240">
+            <div id="photos">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/1.jpg" alt="">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/8.jpeg" alt="">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/2.jpg" alt="">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/6.jpg" alt="">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/3.jpg" alt="">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/4.jpg" alt="">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/5.jpg" alt="">
+                <img src="https://henrysiau.github.io/ZhihengXiao/img/7.jpg" alt="">
+                
             </div>
 
         </section>
