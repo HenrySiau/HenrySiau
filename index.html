@@ -50,6 +50,14 @@
             color: rgb(105, 105, 105);
         }
 
+        .footerNavBar {
+            list-style-type: none;
+            margin: 5 0 5 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+        }
+
         #subtitleAndNavbar {
             display: flex;
             flex-direction: row;
@@ -180,9 +188,12 @@
 
         footer {
             display: flex;
+            flex-direction: column;
             margin: 5 0 5 0;
             color: rgb(94, 94, 94);
             justify-content: center;
+            align-content: center;
+            align-items: center;
         }
 
         #photos {
@@ -238,8 +249,7 @@
                 flex-direction: column;
                 width: 90%;
             }
-
-            #whatIHaveDoneSoFar .projects .project img {
+            #whatIHaveDoneSoFar .projects .project a {
                 width: 30%;
                 height: auto;
                 align-self: center;
@@ -281,11 +291,14 @@
                     <li>
                         <a href="https://henrysiau.github.io/ZhihengXiao/doc/resume.pdf" class="navItem">RESUME</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="https://github.com/HenrySiau/gtplanner-frontend" class="navItem">PROJECTS</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="mailto:siauhenry@gmail.com" class="navItem">EMAIL</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/HenrySiau/" class="navItem">GITHUB</a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/zhiheng-xiao/" class="navItem">LINKEDIN</a>
@@ -319,7 +332,9 @@
             </div>
             <div class="projects">
                 <div class="project">
-                    <img src="https://henrysiau.github.io/ZhihengXiao/img/gtp.png" alt="">
+                    <a href="https://github.com/HenrySiau/gtplanner-frontend">
+                        <img src="https://henrysiau.github.io/ZhihengXiao/img/gtp.png" alt="">
+                    </a>
                     <p>
                         Group Travel Planner &nbsp&nbsp&nbsp
                         <a href="https://gtplanner.com">https://gtplanner.com</a>
@@ -334,7 +349,9 @@
                     </p>
                 </div>
                 <div class="project">
-                    <img src="https://henrysiau.github.io/ZhihengXiao/img/udacity.png" alt="">
+                    <a href="https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/6eb05f66-1e8f-4f75-9052-ab59d186b850.pdf">
+                        <img src="https://henrysiau.github.io/ZhihengXiao/img/udacity.png" alt="">
+                    </a>
                     <p>Full Stack Web Developer Nanodegree
                         <br>
                         <br> Core curriculum:
@@ -343,7 +360,9 @@
                     </p>
                 </div>
                 <div class="project">
-                    <img src="https://henrysiau.github.io/ZhihengXiao/img/SGS-1.jpg" alt="">
+                    <a href="https://www.sgs.com/">
+                        <img src="https://henrysiau.github.io/ZhihengXiao/img/SGS-1.jpg" alt="">
+                    </a>
                     <p> Sales Representative
                         <br>
                         <br> • Won Sales Elite award, Top 1 out of 10.
@@ -352,7 +371,9 @@
                     </p>
                 </div>
                 <div class="project">
-                    <img src="https://henrysiau.github.io/ZhihengXiao/img/gpnu.jpg" alt="">
+                    <a href="http://www.gpnu.edu.cn/">
+                        <img src="https://henrysiau.github.io/ZhihengXiao/img/gpnu.jpg" alt="">
+                    </a>
                     <p> Bachelor's degree in E-commerce
                         <br>
                         <br> Core curriculum:
@@ -381,12 +402,29 @@
                 <img src="https://henrysiau.github.io/ZhihengXiao/img/4.jpg" alt="">
                 <img src="https://henrysiau.github.io/ZhihengXiao/img/5.jpg" alt="">
                 <img src="https://henrysiau.github.io/ZhihengXiao/img/7.jpg" alt="">
-                
+
             </div>
 
         </section>
         <footer>
-            © 2018 by Zhiheng Xiao
+            <p>© 2018 by Zhiheng Xiao </p>
+            <ul class="footerNavBar">
+                <li>
+                    <a href="https://henrysiau.github.io/ZhihengXiao/doc/resume.pdf" class="navItem">RESUME</a>
+                </li>
+                <!-- <li>
+                    <a href="https://github.com/HenrySiau/gtplanner-frontend" class="navItem">PROJECTS</a>
+                </li> -->
+                <li>
+                    <a href="mailto:siauhenry@gmail.com" class="navItem">EMAIL</a>
+                </li>
+                <li>
+                    <a href="https://github.com/HenrySiau/" class="navItem">GITHUB</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/zhiheng-xiao/" class="navItem">LINKEDIN</a>
+                </li>
+            </ul>
         </footer>
     </div>
 </body>
